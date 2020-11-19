@@ -2,3 +2,21 @@
  *  Here goes css which are applied globally to the entire website.
  *  For example css selecting all body, html, h1, p, a or img tags.
  */
+
+ /* Divide the page into 6 columns. The grid class needs to wrap everything
+ in the body */
+.grid {
+  display: grid;
+  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
+      1fr [col-4-start] 1fr [col-5-start] 1fr [col-6-start] 1fr [col-6-end];
+  grid-row: auto;
+}
+
+/* Full width */
+.col-full { grid-column: col-1-start/col-6-end; }
+
+/* The first half */
+.col-1-3 { grid-column: col-1-start/col-4-start; }
+
+/* Second half */
+.col-4-6 { grid-column: col-4-start/col-6-end; }
