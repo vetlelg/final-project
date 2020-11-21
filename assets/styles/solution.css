@@ -1,3 +1,8 @@
-/* 
+/*
  *  CSS specific to the solution.html page
  */
+
+ .functionimg {
+   height: 10fr;
+   width: 10fr;
+ }
