@@ -40,7 +40,7 @@
 .navigation {
   /*grid-column: col-1-start/col-6-end;*/
   width: 100%;
-  border-bottom: 2px solid #2eb82e;
+  border-bottom: 2px solid #29a329;
   position: fixed; /* Fixed position at the top of the screen */
   top: 0vw; /* No margin over the navbar */
   left: 0vw; /* No margin to the left */
@@ -75,7 +75,7 @@
 
 /* All buttons use this code */
 button {
-  background-color: #2eb82e; /* Green backgroundcolor */
+  background-color: #29a329; /* Green backgroundcolor */
   border: none;
   font-family: monospace;
   font-size: 2vw;
