@@ -28,7 +28,10 @@
   margin: -3vw 0vw 0vw 2vw /* Top right bottom left */
 }
 
-
+.pitchImage {
+  background-image: url("../images/Index-pic2.png");
+  background-size: 50vw;
+}
 
 
 /*<p style="font-size: 3.5vw; margin-top: -1vw;">Pollutant detecting bracelet</p>
