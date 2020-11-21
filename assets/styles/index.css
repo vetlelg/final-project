@@ -10,7 +10,8 @@
 
 .pitchStyle h1 {
   font-size: 4vw;
-  margin: 20vh 0vw 0vw -3vw /* Top right bottom left */
+  /*margin: 20vh 0vw 0vw -3vw*/ /* Top right bottom left */
+  margin: 35vh 0vw 0vw -3vw /* Top right bottom left */
 }
 
 .pitchStyle h2 {
@@ -18,15 +19,15 @@
   margin: -0.5vw 0vw 0vw 8vw /* Top right bottom left */
 }
 
-.pitchStyle h3 {
+/*.pitchStyle h3 {
   font-size: 3.5vw;
-  margin: 13vh 0vw 0vw 7.5vw /* Top right bottom left */
-}
+  margin: 13vh 0vw 0vw 7.5vw*/ /* Top right bottom left */
+/*}
 
 .pitchStyle h4 {
   font-size: 7vw;
-  margin: -3vw 0vw 0vw 2vw /* Top right bottom left */
-}
+  margin: -3vw 0vw 0vw 2vw*/ /* Top right bottom left */
+/*}*/
 
 .pitchImage {
   background-image: url("../images/Index-pic2.png");
