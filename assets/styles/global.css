@@ -4,8 +4,15 @@
  */
 
  body {
-   margin-top: 5vw; /* Position content under navigationbar */
-   margin-left: 0vw;
+   /* Position content under navigationbar */
+   margin: 5vw 0vw 0vw 0vw /* Top right bottom left */
+ }
+
+/* Line style */
+ hr {
+   border-color: #29a329;
+   border-width: 2px;
+   margin-top: -1vw;
  }
 
  /* Divide the page into 6 columns. The grid class needs to wrap everything
@@ -43,7 +50,6 @@
   border-bottom: 2px solid #29a329;
   position: fixed; /* Fixed position at the top of the screen */
   top: 0vw; /* No margin over the navbar */
-  left: 0vw; /* No margin to the left */
   background-color: white;
 }
 
@@ -76,19 +82,26 @@
 /* All buttons use this code */
 button {
   background-color: #29a329; /* Green backgroundcolor */
-  border: none;
+  border: 3px solid white;
+  color: white;
   font-family: monospace;
   font-size: 2vw;
   padding: 0.5vw;
 }
 
-/* Link style inside buttons */
-button a {
-  text-decoration: none; /* No underline */
-  color: white;
+/* Same hover effect on all buttons */
+button:hover {
+  background-color: white;
+  color: #29a329;
+  border: 3px solid #29a329;
 }
 
 footer {
-  border-top: 1px solid black;
+  background-color: #29a329;
   margin-top: 2vw;
+}
+
+footer button {
+  float: right;
+  margin: 1vw 0vw 1vw 0vw /* Top right bottom left */
 }
