@@ -4,6 +4,7 @@
  */
 
  body {
+   overflow-x: hidden; /* Disable horizontal scrolling */
    /* Position content under navigationbar */
    margin: 5vw 0vw 0vw 0vw /* Top right bottom left */
  }
