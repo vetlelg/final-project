@@ -3,6 +3,11 @@
  *  For example css selecting all body, html, h1, p, a or img tags.
  */
 
+ body {
+   margin-top: 5vw; /* Position content under navigationbar */
+   margin-left: 0vw;
+ }
+
  /* Divide the page into 6 columns. The grid class needs to wrap everything
  in the body */
 .grid {
@@ -31,10 +36,56 @@
   padding-right: 5vw;
 }
 
-/* Navigation bar */
+/* Horizontal navigation bar */
 .navigation {
-  grid-column: col-1-start/col-6-end;
-  border-bottom: 1px solid black;
+  /*grid-column: col-1-start/col-6-end;*/
+  width: 100%;
+  border-bottom: 2px solid #2eb82e;
+  position: fixed; /* Fixed position at the top of the screen */
+  top: 0vw; /* No margin over the navbar */
+  left: 0vw; /* No margin to the left */
+  background-color: white;
+}
+
+/* List elements in navbar */
+.navigation li {
+  float: right;
+  display: inline;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 1vw 4vw 0vw 0vw /* Top right bottom left */
+}
+
+/* Challenge and Solution links in navbar */
+.navigation li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hover effect, Challenge and Solution links in navbar */
+.navigation li a:hover {
+  text-decoration: underline;
+}
+
+/* Positioning of the logo button */
+.logo button {
+  float: left;
+  margin: 1vw 0vw 1vw 2vw /* Top right bottom left */
+}
+
+/* All buttons use this code */
+button {
+  background-color: #2eb82e; /* Green backgroundcolor */
+  border: none;
+  font-family: monospace;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+/* Link style inside buttons */
+button a {
+  text-decoration: none; /* No underline */
+  color: white;
 }
 
 footer {
