@@ -11,7 +11,7 @@
 
 /* Line style */
  hr {
-   border-color: #29a329;
+   border-color: #4ca146;
    border-width: 2px;
    margin-top: -1vw;
  }
@@ -48,7 +48,7 @@
 .navigation {
   /*grid-column: col-1-start/col-6-end;*/
   width: 100%;
-  border-bottom: 2px solid #29a329;
+  border-bottom: 2px solid #4ca146;
   position: fixed; /* Fixed position at the top of the screen */
   top: 0vw; /* No margin over the navbar */
   background-color: white;
@@ -82,7 +82,7 @@
 
 /* All buttons use this code */
 button {
-  background-color: #29a329; /* Green backgroundcolor */
+  background-color: #4ca146; /* Green backgroundcolor */
   border: 3px solid white;
   color: white;
   font-family: monospace;
@@ -93,12 +93,12 @@ button {
 /* Same hover effect on all buttons */
 button:hover {
   background-color: white;
-  color: #29a329;
-  border: 3px solid #29a329;
+  color: #4ca146;
+  border: 3px solid #4ca146;
 }
 
 footer {
-  background-color: #29a329;
+  background-color: #4ca146;
   margin-top: 2vw;
 }
 
