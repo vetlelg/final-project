@@ -3,6 +3,11 @@
  */
 
  .functionimg {
-   height: 10fr;
-   width: 10fr;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
  }
+
+.colorfunctions {
+  background-color: #cccccc;
+}
