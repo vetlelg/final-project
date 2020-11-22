@@ -13,7 +13,6 @@
  h3 {
    font-size: 26px;
    border-bottom: 2px solid #4ca146;
-   
  }
 
  /* Divide the page into 6 columns. The grid class needs to wrap everything
@@ -78,6 +77,7 @@ nav {
 
 /* Challenge and Solution links in navbar */
 .navigation li a {
+  font-size: 1.5vw;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -137,7 +137,8 @@ footer {
   margin-top: 2vw;
 }
 
-footer button {
+footer a {
+  color: white;
   float: right;
   margin: 1vw 0vw 1vw 0vw /* Top right bottom left */
 }
