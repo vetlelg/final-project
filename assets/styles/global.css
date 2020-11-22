@@ -4,16 +4,16 @@
  */
 
  body {
+   font-family: Arial, Helvetica, sans-serif;
    overflow-x: hidden; /* Disable horizontal scrolling */
    /* Position content under navigationbar */
-   margin: 5vw 0vw 0vw 0vw /* Top right bottom left */
+   margin: 5vw 0 0 0; /* Top right bottom left */
  }
 
-/* Line style */
- hr {
-   border-color: #4ca146;
-   border-width: 2px;
-   margin-top: -1vw;
+ h3 {
+   font-size: 26px;
+   border-bottom: 2px solid #4ca146;
+   
  }
 
  /* Divide the page into 6 columns. The grid class needs to wrap everything
@@ -47,6 +47,9 @@
 /* Horizontal navigation bar */
 .navigation {
   /*grid-column: col-1-start/col-6-end;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: 2px solid #4ca146;
   position: fixed; /* Fixed position at the top of the screen */
@@ -54,24 +57,57 @@
   background-color: white;
 }
 
+/* Nav bar container */
+nav {
+  margin-right: 2vw;
+  height: fit-content;
+  width: fit-content;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* List elements in navbar */
 .navigation li {
-  float: right;
   display: inline;
-  font-size: 1.5vw;
-  font-weight: bold;
-  margin: 1vw 4vw 0vw 0vw /* Top right bottom left */
+  padding-left: 2vw;
 }
 
 /* Challenge and Solution links in navbar */
 .navigation li a {
+  font-weight: bold;
   text-decoration: none;
   color: black;
 }
 
+/* Border below link when link is selected */
+#challenge-link {
+  border-bottom: #4ca146 solid 2px;
+}
+
+/* Border below link when link is selected */
+#solution-link {
+  border-bottom: #4ca146 solid 2px;
+}
+
 /* Hover effect, Challenge and Solution links in navbar */
 .navigation li a:hover {
-  text-decoration: underline;
+  border-bottom: #4ca146 solid 2px;
+}
+
+
+/* Image container for images on entire page */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.challenge-container .image-container img {
+  width: 33%;
+  padding-right: 1px;
 }
 
 /* Positioning of the logo button */
@@ -85,7 +121,6 @@ button {
   background-color: #4ca146; /* Green backgroundcolor */
   border: 3px solid white;
   color: white;
-  font-family: monospace;
   font-size: 2vw;
   padding: 0.5vw;
 }
