@@ -79,6 +79,7 @@
   background-color: #4ca146; /* Green backgroundcolor */
   color: white;
   border: none;
+  outline: none; /* No black border when clicking on the button */
   font-size: 2vw;
   padding: 0.5vw;
   float: left;
@@ -98,6 +99,7 @@ footer button {
   background-color: #4ca146; /* Green backgroundcolor */
   color: white;
   border: 3px solid white;
+  outline: none; /* No black border when clicking on the button */
   font-size: 1.3vw;
   padding: 0.5vw;
   float: right;
