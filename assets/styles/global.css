@@ -78,10 +78,11 @@
 .logo button {
   background-color: #4ca146; /* Green backgroundcolor */
   color: white;
+  font-family: inherit;
   border: none;
   outline: none; /* No black border when clicking on the button */
   font-size: 2vw;
-  padding: 0.5vw;
+  padding: 0.5vw 0.7vw 0.5vw 0.7vw; /* Top right bottom left */
   float: left;
   margin: 1.3vw 0vw 1.3vw 2vw; /* Top right bottom left */
 }
@@ -98,6 +99,7 @@ footer {
 footer button {
   background-color: #4ca146; /* Green backgroundcolor */
   color: white;
+  font-family: inherit;
   border: 3px solid white;
   outline: none; /* No black border when clicking on the button */
   font-size: 1.3vw;
