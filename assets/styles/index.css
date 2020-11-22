@@ -1,3 +1,41 @@
 /*
  *  Here goes css specific to the index.html page
  */
+
+/* The design of the first box containing the pitch */
+.pitchStyle {
+  background-color: #4ca146;
+  color: white;
+}
+
+.pitchStyle h1 {
+  font-size: 4vw;
+  /*margin: 20vh 0vw 0vw -3vw*/ /* Top right bottom left */
+  margin: 35vh 0vw 0vw -3vw /* Top right bottom left */
+}
+
+.pitchStyle h2 {
+  font-size: 2.5vw;
+  margin: -0.5vw 0vw 0vw 8vw /* Top right bottom left */
+}
+
+/*.pitchStyle h3 {
+  font-size: 3.5vw;
+  margin: 13vh 0vw 0vw 7.5vw*/ /* Top right bottom left */
+/*}
+
+.pitchStyle h4 {
+  font-size: 7vw;
+  margin: -3vw 0vw 0vw 2vw*/ /* Top right bottom left */
+/*}*/
+
+.pitchImage {
+  background-image: url("../images/Index-pic2.png");
+  background-size: 50vw;
+}
+
+
+/*<p style="font-size: 3.5vw; margin-top: -1vw;">Pollutant detecting bracelet</p>
+<p style="font-size: 2.5vw; margin-top: -4vw; margin-left: 7vw;">for instant exposure awareness</p>
+<p style="font-size: 3vw; text-align: center; margin-top: -1vw; margin-left: 3vw;">Breathe easy with</p>
+<p style="font-size: 6vw; text-align: center; margin-top: -5vw;">Expozance</p>*/

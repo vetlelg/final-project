@@ -3,6 +3,19 @@
  *  For example css selecting all body, html, h1, p, a or img tags.
  */
 
+ body {
+   overflow-x: hidden; /* Disable horizontal scrolling */
+   /* Position content under navigationbar */
+   margin: 5vw 0vw 0vw 0vw /* Top right bottom left */
+ }
+
+/* Line style */
+ hr {
+   border-color: #4ca146;
+   border-width: 2px;
+   margin-top: -1vw;
+ }
+
  /* Divide the page into 6 columns. The grid class needs to wrap everything
  in the body */
 .grid {
@@ -31,13 +44,65 @@
   padding-right: 5vw;
 }
 
-/* Navigation bar */
+/* Horizontal navigation bar */
 .navigation {
-  grid-column: col-1-start/col-6-end;
-  border-bottom: 1px solid black;
+  /*grid-column: col-1-start/col-6-end;*/
+  width: 100%;
+  border-bottom: 2px solid #4ca146;
+  position: fixed; /* Fixed position at the top of the screen */
+  top: 0vw; /* No margin over the navbar */
+  background-color: white;
+}
+
+/* List elements in navbar */
+.navigation li {
+  float: right;
+  display: inline;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 1vw 4vw 0vw 0vw /* Top right bottom left */
+}
+
+/* Challenge and Solution links in navbar */
+.navigation li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hover effect, Challenge and Solution links in navbar */
+.navigation li a:hover {
+  text-decoration: underline;
+}
+
+/* Positioning of the logo button */
+.logo button {
+  float: left;
+  margin: 1vw 0vw 1vw 2vw /* Top right bottom left */
+}
+
+/* All buttons use this code */
+button {
+  background-color: #4ca146; /* Green backgroundcolor */
+  border: 3px solid white;
+  color: white;
+  font-family: monospace;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+/* Same hover effect on all buttons */
+button:hover {
+  background-color: white;
+  color: #4ca146;
+  border: 3px solid #4ca146;
 }
 
 footer {
-  border-top: 1px solid black;
+  background-color: #4ca146;
   margin-top: 2vw;
+}
+
+footer button {
+  float: right;
+  margin: 1vw 0vw 1vw 0vw /* Top right bottom left */
 }
