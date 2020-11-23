@@ -10,12 +10,12 @@
 
 .pitchStyle h1 {
   font-size: 3vw;
-  margin: 35vh 0vw 0vw -14vw /* Top right bottom left */
+  margin: 35vh 0vw 0vw -10vw /* Top right bottom left */
 }
 
 .pitchStyle h2 {
   font-size: 1.5vw;
-  margin: 0; /* Top right bottom left */
+  margin: 0 0 0 4vw; /* Top right bottom left */
 }
 
 .pitchImage,
