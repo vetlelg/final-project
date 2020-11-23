@@ -9,14 +9,18 @@
 }
 
 .pitchStyle h1 {
-  font-size: 4vw;
-  /*margin: 20vh 0vw 0vw -3vw*/ /* Top right bottom left */
-  margin: 35vh 0vw 0vw -3vw /* Top right bottom left */
+  font-size: 3vw;
+  margin: 35vh 0vw 0vw -10vw /* Top right bottom left */
 }
 
 .pitchStyle h2 {
-  font-size: 2.5vw;
-  margin: -0.5vw 0vw 0vw 8vw /* Top right bottom left */
+  font-size: 1.5vw;
+  margin: 0 0 0 4vw; /* Top right bottom left */
+}
+
+.pitchImage,
+.pitchStyle {
+  height: 90vh;
 }
 
 /*.pitchStyle h3 {
@@ -32,6 +36,11 @@
 .pitchImage {
   background-image: url("../images/Index-pic2.png");
   background-size: 50vw;
+}
+
+.challenge-intro .image-container img {
+  width: 33%;
+  padding-right: 1px;
 }
 
 
