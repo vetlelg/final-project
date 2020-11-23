@@ -1,3 +1,7 @@
 /*
  *  Here goes css specific to the challenge.html page
  */
+
+ .challenge .image-container img {
+   width: 100%;
+ }
