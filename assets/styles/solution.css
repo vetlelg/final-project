@@ -11,3 +11,15 @@
 .colorfunctions {
   background-color: #cccccc;
 }
+
+td {
+  padding: 1vw;
+}
+
+table {
+  border: 1px solid grey;
+}
+
+th {
+  padding-top: 1vw;
+}
