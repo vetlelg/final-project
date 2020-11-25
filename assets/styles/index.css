@@ -21,6 +21,7 @@
 .pitchImage,
 .pitchStyle {
   height: 90vh;
+  margin-top: -2vw;
 }
 
 .pitchImage {
