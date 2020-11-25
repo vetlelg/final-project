@@ -1,0 +1,62 @@
+/*
+ *  Here goes css specific to the process.html page
+ */
+
+ li {
+   margin-bottom: 1vw;
+ }
+
+ a {
+   font-weight: bold;
+   text-decoration: none;
+   color: black;
+ }
+
+ a:hover {
+   border-bottom: #4ca146 solid 2px;
+ }
+
+/* Divide the page into 6 columns. The grid class needs to wrap everything
+in the body */
+.grid {
+ display: grid;
+ grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
+     1fr [col-4-start] 1fr [col-5-start] 1fr [col-6-start] 1fr [col-6-end];
+ grid-row: auto;
+}
+
+/* Presenting the members */
+[class*="memberBox"] {
+ background-color: #4ca146;
+ color: white;
+ font-size: 1.7vw;
+ border-radius: 4px;
+ text-align: center;
+}
+
+/* Column 1 of 3 */
+.memberBox1 {
+ grid-column: col-1-start/col-3-start;
+ margin-left: 15vw;
+ margin-right: -4vw;
+}
+
+/* Column 2 of 3 */
+.memberBox2 {
+ grid-column: col-3-start/col-5-start;
+ margin-left: 5vw;
+ margin-right: 5vw;
+}
+
+/* Column 3 of 3 */
+.memberBox3 {
+ grid-column: col-5-start/col-6-end;
+ margin-left: -4vw;
+ margin-right: 15vw;
+}
+
+.memberNr {
+  font-size: 2vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
