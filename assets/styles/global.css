@@ -7,13 +7,19 @@
    font-family: Arial, Helvetica, sans-serif;
    overflow-x: hidden; /* Disable horizontal scrolling */
    /* Position content under navigationbar */
-   margin: 5vw 0vw 0vw 0vw; /* Top right bottom left */
+   margin: 7vw 0vw 0vw 0vw; /* Top right bottom left */
  }
 
  h3 {
    margin-top: 5vh;
    font-size: 26px;
    border-bottom: 2px solid #4ca146;
+ }
+
+/* Source links */
+ p a {
+   text-decoration: none;
+   color: black;
  }
 
  /* Divide the page into 6 columns. The grid class needs to wrap everything
