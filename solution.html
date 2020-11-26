@@ -53,33 +53,34 @@
       </p>
 
       <table>
-        <caption style="text-align: left;"> AQI-Index used by Expozance </caption>
+        <caption style="text-align: left;"> Air Quality Index used by Expozance </caption>
         <tr style="background-color: #e1ebf4;">
           <th> Air Quality Index </th>
           <th> Who needs to be concerned? </th>
           <th> What should I do? </th>
         </tr>
-        <tr style="background-color: #66ff66;">
-          <td>
+        <tr>
+          <td style="background-color: #b3ffb3;">
             Good <br>
-            (Green) <br>
+            (Green zone) <br>
             0 - 50
           </td>
-          <td colspan="2" style="text-align: center;">
+          <td colspan="2" style="text-align: center;
+              background-color: #ccffcc; ">
             It's a great day to be active outside
           </td>
         </tr>
-        <tr style="background-color: #ffff4d;">
-          <td>
+        <tr>
+          <td style="background-color: #ffff99;">
             Moderate <br>
-            (Yellow) <br>
+            (Yellow zone) <br>
             51 - 100
           </td>
-          <td>
+          <td style="background-color: #ffffcc;">
             Some people who may be unusually sensitive
             to particle pollution.
           </td>
-          <td>
+          <td style="background-color: #ffffcc;">
             <b>Unusually sensitive people:</b> Consider redusing
             prolonged or heavy exertion. Watch for
             symptoms such as coughing or shortness of breath.
@@ -88,18 +89,18 @@
             <b>Everone else:</b> It's a good day to be outside.
           </td>
         </tr>
-        <tr style="background-color: #ff9933;">
-          <td>
+        <tr>
+          <td style="background-color: #ffc180;">
             Unhealthy for sensitive groups <br>
-            (Orange) <br>
+            (Orange zone) <br>
             101 - 150
           </td>
-          <td>
+          <td style="background-color: #ffe6cc;">
             Sensitive groups include people with heart
             or lung disease, older adults, children
             and teenagers
           </td>
-          <td>
+          <td style="background-color: #ffe6cc;">
             <b>Sensitive groups:</b> Reduce prolonged or heavy
             exertion. It's ok to be active outside, but
             take more breaks and do less intense activities.
@@ -116,16 +117,16 @@
             provider.
           </td>
         </tr>
-        <tr style="background-color: #ff3333;">
-          <td>
+        <tr>
+          <td style="background-color: #ff9999;">
             Unhealthy <br>
-            (Red) <br>
+            (Red zone) <br>
             151 - 200
           </td>
-          <td>
+          <td style="background-color: #ffcccc;">
             Everyone
           </td>
-          <td>
+          <td style="background-color: #ffcccc;">
             <b>Sensitive groups:</b> Avoid prolonged or heavy exertion.
             Move activities indoors or reschedule to a time when
             the air quality is better. <br>
@@ -134,16 +135,16 @@
             Take more breaks during all outdoor activities.
           </td>
         </tr>
-        <tr style="background-color: #b30059;">
-          <td>
+        <tr>
+          <td style="background-color: #ff80bb;">
             Very Unhealty <br>
-            (Purple) <br>
+            (Purple zone) <br>
             201 - 300
           </td>
-          <td>
+          <td style="background-color: #ffb3d6">
             Everyone
           </td>
-          <td>
+          <td style="background-color: #ffb3d6">
             <b>Sensitive groups:</b> Avoid all physical activity outdoors.
             Move activities indoors or reschedule to a time when
             the air quality is better. <br>
@@ -153,16 +154,16 @@
             to a time when the air quality is better.
           </td>
         </tr>
-        <tr style="background-color: #b30033;">
-          <td>
+        <tr>
+          <td style="background-color: #ff4d7f;">
             Hazardous <br>
-            (Burgundy) <br>
+            (Burgundy zone) <br>
             301 - 500
           </td>
-          <td>
+          <td style="background-color: #ff80a4;">
             Everyone
           </td>
-          <td>
+          <td style="background-color: #ff80a4;">
             <b>Sensitive groups:</b> Remain indoors and keep activity
             levels low. Follow tips for keeping particle
             levels low indoors. <br>
@@ -224,13 +225,14 @@
         <h3>Bracelet function</h3>
       </header>
 
-        <!-- VILDE (Si ifra om du trenger hjelp - Mari) -->
+
         <h4>
           The Expozance has some different functions to accomodate
           your preferences. </h4>
     </div>
 
-      <div class="col-1-3" style="padding-left: 15vw; padding-right: 5vw;">
+      <div class="col-1-3 backgroundGreyLeft"
+            style="padding-left: 5vw; padding-right: 5vw;">
         <picture>
           <img src="assets/images/splitScreenTransparent.png"
           alt="Split Screen" class="functionimg" style="height: auto;
@@ -247,7 +249,8 @@
         </p>
       </div>
 
-      <div class="col-4-6" style="padding-left: 5vw; padding-right: 15vw;">
+      <div class="col-4-6 backgroundGreyRight"
+            style="padding-left: 5vw; padding-right: 5vw;">
         <picture>
           <img src="assets/images/singleScreenTransparent.png"
           alt="Split Screen" class="functionimg" style="height: auto;
@@ -260,7 +263,8 @@
         </p>
       </div>
 
-      <div class="col-1-3" style="padding-left: 15vw; padding-right: 5vw;">
+      <div class="col-1-3 backgroundGreyLeft"
+            style="padding-left: 5vw; padding-right: 5vw;">
         <picture>
           <img src="assets/images/alertsTransparent.png"
           alt="Split Screen" class="functionimg" style="height: auto;
@@ -276,7 +280,8 @@
         </p>
       </div>
 
-      <div class="col-4-6" style="padding-left: 5vw; padding-right: 15vw;">
+      <div class="col-4-6 backgroundGreyRight"
+          style="padding-left: 5vw; padding-right: 5vw;">
         <picture>
           <img src="assets/images/settingsTransparent.png"
           alt="Split Screen" class="functionimg" style="height: auto;
