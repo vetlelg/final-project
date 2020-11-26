@@ -2,6 +2,10 @@
  *  Here goes css specific to the meetingNotes HTML pages
  */
 
+ body {
+   background-color: #cccccc;
+ }
+
 p {
   margin-top: 2vw;
 }
@@ -9,3 +13,57 @@ p {
 ul {
   margin-top: -0.5vw;
 }
+
+li {
+  margin-top: 0.3vw;
+}
+
+img {
+  width: 69vw;
+  margin-top: 0.4vw;
+  margin-bottom: 0.4vw;
+}
+
+/* Full width meetingNotes edition */
+.col-notes {
+  grid-column: col-1-start/col-6-end;
+  background-color: white;
+  padding: 3vw;
+  margin: 1vw 12vw 3vw 12vw; /* Top right bottom left */
+}
+
+.noteButtons {
+  margin-top: 2vw;
+}
+
+.noteButtons button {
+  background-color: #808080;
+  font-size: 1.6vw;
+  padding: 0.2vw 1vw 0.2vw 1vw; /* Top right bottom left */
+  border-radius: 4px;
+  margin-left: -3vw;
+  margin-right: -3vw;
+}
+
+.noteButtons button:hover {
+  background-color: #666666;
+}
+
+.arrow {
+  font-size: 1.5vw;
+  vertical-align: top;
+}
+
+/*
+button {
+  background-color: #4ca146;
+  color: white;
+  font-family: inherit;
+  outline: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #448e3e;
+}
+*/
