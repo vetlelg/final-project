@@ -28,8 +28,8 @@ img {
 .col-notes {
   grid-column: col-1-start/col-6-end;
   background-color: white;
-  padding: 3vw;
-  margin: 1vw 12vw 3vw 12vw; /* Top right bottom left */
+  padding: 3vw 5vw 7vw 5vw; /* Top right bottom left */
+  margin: 1vw 10vw 3vw 10vw; /* Top right bottom left */
 }
 
 .noteButtons {
@@ -41,8 +41,8 @@ img {
   font-size: 1.6vw;
   padding: 0.2vw 1vw 0.2vw 1vw; /* Top right bottom left */
   border-radius: 4px;
-  margin-left: -3vw;
-  margin-right: -3vw;
+  margin-left: -5vw;
+  margin-right: -5vw;
 }
 
 .noteButtons button:hover {
@@ -53,17 +53,3 @@ img {
   font-size: 1.5vw;
   vertical-align: top;
 }
-
-/*
-button {
-  background-color: #4ca146;
-  color: white;
-  font-family: inherit;
-  outline: none;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #448e3e;
-}
-*/
