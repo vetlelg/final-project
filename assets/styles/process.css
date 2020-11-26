@@ -60,3 +60,19 @@ in the body */
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
 }
+
+@media only screen and (max-width: 600px) {
+  [class*="memberBox"] {
+    grid-column: col-1-start/col-6-end;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    font-size: 4vw;
+  }
+
+  .memberNr {
+    font-size: 6vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+}
