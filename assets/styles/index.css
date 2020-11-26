@@ -25,11 +25,41 @@
 }
 
 .pitchImage {
-  background-image: url("../images/Index-pic2.png");
-  background-size: 50vw;
+  width: 50vw;
 }
 
 .challenge-intro .image-container img {
   width: 33%;
   padding-right: 1px;
+}
+
+.protoImage {
+  width: 50%;
+  margin-left: 9vw;
+}
+
+/* phone version */
+@media only screen and (max-width: 600px) {
+  .pitchStyle h1 {
+    font-size: 7vw;
+    margin: 35vh 0vw 0vw 0vw /* Top right bottom left */
+  }
+
+  .pitchStyle h2 {
+    font-size: 3.5vw;
+    margin: 0 0 0 33vw; /* Top right bottom left */
+  }
+
+  .pitchImage {
+    margin-top: 0vw;
+  }
+
+  .pitchImage {
+    width: 100vw;
+  }
+
+  .protoImage {
+    width: 60%;
+    margin-left: 22vw;
+  }
 }
