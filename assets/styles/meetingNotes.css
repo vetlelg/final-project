@@ -3,7 +3,7 @@
  */
 
  body {
-   background-color: #cccccc; /* Grey background */
+   background-color: #e6e6e6; /* Grey background */
  }
 
 p {
@@ -30,7 +30,7 @@ img {
   background-color: white;
   padding: 3vw 5vw 7vw 5vw; /* Top right bottom left */
   margin: 1vw 10vw 3vw 10vw; /* Top right bottom left */
-  box-shadow: 0px 0px 10px 1px grey; /* Box shadow with blur */
+  box-shadow: 0px 0px 3px 1px grey; /* Box shadow with blur */
 }
 
 .noteButtons {
@@ -55,6 +55,17 @@ img {
   vertical-align: top;
 }
 
+/* tablet version */
+@media only screen and (max-width: 1000px) {
+  .noteButtons button {
+    font-size: 2vw;
+  }
+
+  .arrow {
+    font-size: 1.9vw;
+  }
+}
+
 /* phone version */
 @media only screen and (max-width: 600px) {
   .col-notes {
@@ -66,7 +77,6 @@ img {
   }
 
   .noteButtons button {
-    /*font-size: 1.6vw;*/
     padding: 0.5vw 1.3vw 0.5vw 1.3vw; /* Top right bottom left */
     font-size: 3.5vw;
     margin-left: -3vw;
