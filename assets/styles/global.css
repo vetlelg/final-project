@@ -125,6 +125,10 @@ button:hover {
   background-color: #448e3e;
 }
 
+p {
+  line-height: 185%;
+}
+
 /* Positioning of and additional code for the logo button */
 .logo button {
   border: none;
