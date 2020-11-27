@@ -79,7 +79,7 @@ nav {
 /* List elements in navbar */
 .navigation li {
   display: inline;
-  padding-left: 2vw;
+  padding-left: 3vw;
 }
 
 /* Challenge and Solution links in navbar */
@@ -135,16 +135,20 @@ button:hover {
 }
 
 footer {
+  grid-column: col-1-start/col-6-end;
   background-color: #4ca146;
   margin-top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 /* Positioning of and additional code for the source button */
 footer button {
   border: 1px solid white;
-  font-size: 1.3vw;
-  padding: 0.5vw;
-  margin: 1vw 0vw 1vw 0vw; /* Top right bottom left */
+  /*font-size: 1.3vw;*/
+  font-size: 17px;
+  padding: 5px;
+  margin: 15px 0px 15px 0px; /* Top right bottom left */
 }
 
 /* phone version */
