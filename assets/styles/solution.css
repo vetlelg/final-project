@@ -24,6 +24,14 @@ th {
   padding-top: 1vw;
 }
 
+ul {
+  margin-top: -1vw;
+}
+
+li {
+  line-height: 185%;
+}
+
 .backgroundGreyLeft {
   background-color: #f2f2f2;
   margin-left: 17vw;
