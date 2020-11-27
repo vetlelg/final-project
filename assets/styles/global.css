@@ -166,4 +166,15 @@ footer button {
     grid-column: col-1-start/col-6-end;
     padding-right: 5vw;
   }
+
+  /* images in image-container class */
+  .image-container {
+    flex-wrap: wrap;
+  }
+  .challenge-intro .image-container img {
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+  }
+  
 }
