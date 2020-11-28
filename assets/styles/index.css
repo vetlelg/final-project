@@ -41,6 +41,10 @@
   margin: auto;
 }
 
+.topMargin {
+  margin-top: 9vw;
+}
+
 /* phone version */
 @media only screen and (max-width: 600px) {
   .pitchStyle h1 {
@@ -75,5 +79,8 @@
   .solution-intro img {
     width: 100%;
   }
-}
 
+  .topMargin {
+    margin-top: 0vw;
+  }
+}
