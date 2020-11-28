@@ -26,6 +26,10 @@ li {
   line-height: 185%;
 }
 
+.solution-header {
+  background-color: #4ca146;
+}
+
 .solution-image-container {
   display: flex;
   justify-content: space-between;
@@ -35,7 +39,6 @@ li {
   width: 45%;
   padding: 10px;
   margin-bottom: 30px;
-  border: 2px solid #4ca146;
   border-radius: 25px;
 }
 
