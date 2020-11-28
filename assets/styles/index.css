@@ -10,32 +10,35 @@
 
 .pitchStyle h1 {
   font-size: 3vw;
-  margin: 35vh 0vw 0vw -10vw /* Top right bottom left */
+  margin: 37vh 0vw 0vw 5vw; /* Top right bottom left */
 }
 
 .pitchStyle h2 {
   font-size: 1.5vw;
-  margin: 0 0 0 4vw; /* Top right bottom left */
+  margin: 0 0 0 5vw; /* Top right bottom left */
 }
 
 .pitchImage,
 .pitchStyle {
   height: 90vh;
-  margin-top: -2vw;
 }
 
 .pitchImage {
   width: 50vw;
 }
 
-.challenge-intro .image-container img {
+.challenge-intro img {
   width: 33%;
-  padding-right: 1px;
+  padding: 1px;
 }
 
-.protoImage {
-  width: 50%;
-  margin-left: 9vw;
+.solution-intro {
+  width: 100%;
+}
+.solution-intro img {
+  display: block;
+  width: 30%;
+  margin: auto;
 }
 
 .topMargin {
@@ -45,18 +48,17 @@
 /* phone version */
 @media only screen and (max-width: 600px) {
   .pitchStyle h1 {
+    margin: 17vh 0vw 0vw 5vw;
     font-size: 7vw;
-    margin: 15vh 0vw 0vw 0vw /* Top right bottom left */
   }
 
   .pitchStyle h2 {
     font-size: 3.5vw;
-    margin: 0 0 0 33vw; /* Top right bottom left */
   }
 
   .pitchStyle {
+    width: 100vw;
     height: 45vh;
-    margin-top: -2vw;
   }
 
   .pitchImage {
@@ -68,9 +70,14 @@
     width: 100vw;
   }
 
-  .protoImage {
-    width: 60%;
-    margin-left: 22vw;
+  .challenge-intro img {
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .solution-intro img {
+    width: 100%;
   }
 
   .topMargin {

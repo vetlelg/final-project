@@ -26,37 +26,20 @@ in the body */
 }
 
 /* Presenting the members */
-[class*="memberBox"] {
+.memberBox {
+ width: 33%;
+ margin: 10px;
  background-color: #4ca146;
  color: white;
- font-size: 1.7vw;
  border-radius: 4px;
  text-align: center;
 }
 
-/* Column 1 of 3 */
-.memberBox1 {
- grid-column: col-1-start/col-3-start;
- margin-left: 15vw;
- margin-right: -4vw;
-}
-
-/* Column 2 of 3 */
-.memberBox2 {
- grid-column: col-3-start/col-5-start;
- margin-left: 5vw;
- margin-right: 5vw;
-}
-
-/* Column 3 of 3 */
-.memberBox3 {
- grid-column: col-5-start/col-6-end;
- margin-left: -4vw;
- margin-right: 15vw;
+.memberbox-container {
+  display: flex;
 }
 
 .memberNr {
-  font-size: 2vw;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
 }
@@ -64,16 +47,11 @@ in the body */
 @media only screen and (max-width: 600px) {
   /* Horizontal positioning -> vertical positioning */
   /* Bigger font size */
-  [class*="memberBox"] {
-    grid-column: col-1-start/col-6-end;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
-    font-size: 4vw;
+  .memberBox {
+    width: 100%;
   }
 
   .memberNr {
-    font-size: 6vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
   }
