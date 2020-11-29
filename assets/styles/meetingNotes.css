@@ -15,8 +15,14 @@ ul {
 }
 
 li {
-  margin-top: 0.3vw;
+  margin-top: 0.5vw;
 }
+
+/* Source links */
+ li a {
+   text-decoration: none;
+   color: black;
+ }
 
 img {
   width: 69vw;
@@ -55,6 +61,11 @@ img {
   vertical-align: top;
 }
 
+.buttonsUnderDocument {
+  margin-top: -2vw;
+  margin-bottom: 2vw;"
+}
+
 /* tablet version */
 @media only screen and (max-width: 1000px) {
   .noteButtons {
@@ -79,6 +90,10 @@ img {
     margin: 2vw 2vw 3vw 2vw; /* Top right bottom left */
   }
 
+  img {
+    width: 84vw;
+  }
+
   .noteButtons {
     margin-top: 4vw;
   }
@@ -92,5 +107,10 @@ img {
 
   .arrow {
     font-size: 3.4vw;
+  }
+
+  .buttonsUnderDocument {
+    margin-top: -1vw;
+    margin-bottom: 2vw;
   }
 }
