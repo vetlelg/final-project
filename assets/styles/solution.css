@@ -45,7 +45,9 @@ li {
 .solution-image img {
   display: block;
   margin: auto;
-  width: 50%;
+  /* height: 50% */
+  width: 17vw;
+  height: 30vw;
 }
 
 /* Responsive design */
@@ -59,7 +61,9 @@ li {
   }
 
   .solution-image img {
-    width: 100%;
+    /* width: 100% */
+    width: 70vw;
+    height: 130vw;
   }
 }
 
