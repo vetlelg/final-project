@@ -18,6 +18,12 @@ li {
   margin-top: 0.5vw;
 }
 
+/* Source links */
+ li a {
+   text-decoration: none;
+   color: black;
+ }
+
 img {
   width: 69vw;
   margin-top: 0.4vw;
