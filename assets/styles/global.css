@@ -25,7 +25,7 @@
  }
 
  h3 {
-   margin-top: 80px;
+   margin-top: 40px;
    margin-left: 16px;
    margin-right: 16px;
    font-size: 26px;
@@ -40,9 +40,9 @@
  h5 {
    max-width: 1000px;
    padding: 0 16px;
-   margin: 80px auto;
+   margin: 70px auto;
    color: white;
-   font-size: 50px;
+   font-size: 46px;
    text-align: left;
  }
 
@@ -198,5 +198,7 @@ footer button {
   .col-4-6 {
     grid-column: col-1-start/col-6-end;
   }
+
+  
 
 }
