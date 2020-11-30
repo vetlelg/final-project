@@ -25,7 +25,7 @@
  }
 
  h3 {
-   margin-top: 80px;
+   margin-top: 40px;
    margin-left: 16px;
    margin-right: 16px;
    font-size: 26px;
@@ -83,59 +83,97 @@
 }
 
 /* Horizontal navigation bar */
+
 .navigation {
-  /*grid-column: col-1-start/col-6-end;*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  width: 100%;
-  height: 80px;
-  border-bottom: 2px solid #4ca146;
-  position: fixed; /* Fixed position at the top of the screen */
-  top: 0vw; /* No margin over the navbar */
   background-color: white;
+  border-bottom: 2px solid #4ca146;
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
 }
 
-/* Nav bar container */
-nav {
-  height: fit-content;
-  width: fit-content;
-}
-
-.navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* List elements in navbar */
-.navigation li {
-  display: inline;
-  padding-left: 30px;
-}
-
-/* Challenge and Solution links in navbar */
 .navigation li a {
-  font-size: 20px;
+  padding: 30px 20px;
+  margin: 0;
   font-weight: bold;
+  color: #4f5151;
+  display: block;
   text-decoration: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li:hover a {
   color: black;
 }
 
-/* Border below link when link is selected */
-#challenge-link {
-  border-bottom: #4ca146 solid 2px;
+.logo {
+  display: block;
+  float: left;
+  padding: 20px;
+  text-decoration: none;
 }
 
-/* Border below link when link is selected */
-#solution-link {
-  border-bottom: #4ca146 solid 2px;
+/* menu */
+
+.menu {
+  display: block;
+  clear: none;
+  float: right;
+  max-height: none;
+  transition: max-height 300ms ease-in;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  background-color: white;
 }
 
-/* Hover effect, Challenge and Solution links in navbar */
-.navigation li a:hover {
-  border-bottom: #4ca146 solid 2px;
+/* Hamburger icon */
+
+.hamburger-icon {
+  margin-top: 5px;
+  display: none;
+}
+
+.navigation-icon {
+  background: #4ca146;
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 30px;
+}
+
+.navigation-icon:before,
+.navigation-icon:after {
+  background: #4ca146;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.navigation-icon:before {
+  top: 7px;
+}
+
+.navigation-icon:after {
+  top: -7px;
+}
+
+/* Hamburger button */
+
+.hamburger-button {
+  display: none;
+}
+
+.hamburger-button:checked ~ .menu {
+  max-height: 240px;
 }
 
 /* Image container with display flex for positioning images inside a div */
@@ -167,8 +205,8 @@ button:hover {
 /* Positioning of and additional code for the logo button */
 .logo button {
   border: none;
-  font-size: 30px;
-  padding: 6px 10px 6px 10px; /* Top right bottom left */
+  font-size: 24px;
+  padding: 4px 10px 4px 10px; /* Top right bottom left */
 }
 
 footer {
@@ -215,6 +253,34 @@ footer button {
   /* .col-4-6 -> .col-full */
   .col-4-6 {
     grid-column: col-1-start/col-6-end;
+  }
+
+  /* Navigation bar */
+  .navigation li {
+    width: 100vw;
+  }
+
+  .navigation li a {
+    padding: 10px 20px;
+  }
+
+  .menu {
+    clear: both;
+    float: left;
+    max-height: 0;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .navigation li:hover {
+    background-color: #e4e4e4;
   }
 
 }
