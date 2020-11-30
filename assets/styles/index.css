@@ -2,15 +2,6 @@
  *  Here goes css specific to the index.html page
  */
 
- /* Divide the page into 6 columns. The grid class needs to wrap everything
- in the body */
-.grid {
-  display: grid;
-  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
-      1fr [col-4-start] 1fr [col-5-start] 1fr [col-6-start] 1fr [col-6-end];
-  grid-row: auto;
-}
-
 /* The design of the first box containing the pitch */
 .pitchStyle {
   background-color: #4ca146;
@@ -52,18 +43,6 @@
 
 .topMargin {
   margin-top: 9vw;
-}
-
-@media only screen and (max-width: 1000px) and (orientation: portrait) {
-  /* .col-1-3 -> .col-full */
-  .col-1-3 {
-    grid-column: col-1-start/col-6-end;
-  }
-
-  /* .col-4-6 -> .col-full */
-  .col-4-6 {
-    grid-column: col-1-start/col-6-end;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
