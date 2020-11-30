@@ -2,6 +2,15 @@
  *  Here goes css specific to the index.html page
  */
 
+ /* Divide the page into 6 columns. The grid class needs to wrap everything
+ in the body */
+.grid {
+  display: grid;
+  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
+      1fr [col-4-start] 1fr [col-5-start] 1fr [col-6-start] 1fr [col-6-end];
+  grid-row: auto;
+}
+
 /* The design of the first box containing the pitch */
 .pitchStyle {
   background-color: #4ca146;
@@ -23,11 +32,9 @@
   height: 90vh;
 }
 
-/*
 .pitchImage {
   width: 50vw;
 }
-*/
 
 .challenge-intro img {
   width: 33%;
