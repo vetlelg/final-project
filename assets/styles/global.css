@@ -83,60 +83,120 @@
 }
 
 /* Horizontal navigation bar */
+/*.navigation */
+
 .navigation {
-  /*grid-column: col-1-start/col-6-end;*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
+  background-color: white;
+  border-bottom: 2px solid #4ca146;
+  position: fixed;
   width: 100%;
   height: 80px;
-  border-bottom: 2px solid #4ca146;
-  position: fixed; /* Fixed position at the top of the screen */
-  top: 0vw; /* No margin over the navbar */
-  background-color: white;
-}
-
-/* Nav bar container */
-nav {
-  height: fit-content;
-  width: fit-content;
+  top: 0;
+  z-index: 3;
 }
 
 .navigation ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
 }
 
-/* List elements in navbar */
-.navigation li {
-  display: inline;
-  padding-left: 30px;
-}
-
-/* Challenge and Solution links in navbar */
 .navigation li a {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
   color: black;
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
 }
 
-/* Border below link when link is selected */
-#challenge-link {
-  border-bottom: #4ca146 solid 2px;
+.navigation li a:hover,
+.navigation .hamburger-button:hover {
+  background-color: #f4f4f4;
 }
 
-/* Border below link when link is selected */
-#solution-link {
-  border-bottom: #4ca146 solid 2px;
+.navigation li {
+  float: left;
 }
 
-/* Hover effect, Challenge and Solution links in navbar */
-.navigation li a:hover {
-  border-bottom: #4ca146 solid 2px;
+.navigation .logo {
+  display: block;
+  float: left;
+  padding: 15px 20px;
+  text-decoration: none;
 }
+
+/* menu */
+
+.navigation .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.navigation .hamburger-icon {
+  display: none;
+}
+
+.navigation .hamburger-icon .navigation-icon {
+  background: #4ca146;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navigation .hamburger-icon .navigation-icon:before,
+.navigation .hamburger-icon .navigation-icon:after {
+  background: #4ca146;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navigation .hamburger-icon .navigation-icon:before {
+  top: 5px;
+}
+
+.navigation .hamburger-icon .navigation-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navigation .hamburger-button {
+  display: none;
+}
+
+.navigation .hamburger-button:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon {
+  background: transparent;
+}
+
+.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:after {
+  transform: rotate(45deg);
+}
+
+.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:before,
+.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:after {
+  top: 0;
+}
+
+
 
 /* Image container with display flex for positioning images inside a div */
 .image-container {
@@ -162,8 +222,8 @@ button:hover {
 /* Positioning of and additional code for the logo button */
 .logo button {
   border: none;
-  font-size: 30px;
-  padding: 6px 10px 6px 10px; /* Top right bottom left */
+  font-size: 24px;
+  padding: 4px 10px 4px 10px; /* Top right bottom left */
 }
 
 footer {
@@ -197,6 +257,28 @@ footer button {
   /* .col-4-6 -> .col-full */
   .col-4-6 {
     grid-column: col-1-start/col-6-end;
+  }
+
+
+  .navigation li {
+    width: 100vw;
+  }
+  .navigation li a {
+    padding: 20px 20px;
+  }
+  .navigation .menu {
+    clear: both;
+    float: left;
+    max-height: 0;
+  }
+
+  .navigation .hamburger-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
   }
 
 }
