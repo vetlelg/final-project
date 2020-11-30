@@ -50,7 +50,7 @@
 /* Tablet portraitmode */
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
   .pitchStyle h1 {
-    margin: 17vh 0vw 0vw 5vw;
+    margin: 10vh 0vw 0vw 5vw; /* Top right bottom left */
     font-size: 7vw;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .pitchImage {
-    height: 70vh;
+    height: 65vh;
     margin-top: 0vw;
   }
 
