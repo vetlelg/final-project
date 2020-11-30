@@ -59,14 +59,21 @@
     margin: 0 0 0 2vw; /* Top right bottom left */
   }
 
-  .challenge-intro img {
-    width: 32.8%;
-    padding: 1px;
-  }
-
   .pitchImage,
   .pitchStyle {
     height: 85vh;
+  }
+
+  .pitchImage {
+    width: 120vh; /* Wider imagebox */
+    margin-left: -20vw; /* Overlap with pitchbox */
+    position: relative;
+    z-index: -1; /* Place imagebox under pitchbox */
+  }
+
+  .challenge-intro img {
+    width: 32.8%;
+    padding: 1px;
   }
 }
 
