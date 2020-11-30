@@ -27,7 +27,7 @@ in the body */
 
 /* Presenting the members */
 .memberBox {
- width: 33%;
+ width: 33%; /* Need space for 3 members */
  margin: 10px;
  background-color: #4ca146;
  color: white;
@@ -49,8 +49,6 @@ in the body */
 }
 
 @media only screen and (max-width: 600px) {
-  /* Horizontal positioning -> vertical positioning */
-  /* Bigger font size */
   .memberBox {
     width: 100%;
   }
