@@ -65,7 +65,7 @@
   }
 
   .pitchImage {
-    width: 120vh; /* Wider imagebox */
+    width: 120vw; /* Wider imagebox */
     margin-left: -20vw; /* Overlap with pitchbox */
     position: relative;
     z-index: -1; /* Place imagebox under pitchbox */
