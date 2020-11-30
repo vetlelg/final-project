@@ -34,6 +34,8 @@
 
 .solution-intro {
   width: 100%;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
 }
 .solution-intro img {
   display: block;
@@ -58,11 +60,11 @@
 
   .pitchStyle {
     width: 100vw;
-    height: 45vh;
+    height: 30vh;
   }
 
   .pitchImage {
-    height: 45vh;
+    height: 70vh;
     margin-top: 0vw;
   }
 
@@ -111,7 +113,7 @@
   }
 
   .solution-intro img {
-    width: 100%;
+    width: 60%;
   }
 
   .topMargin {
