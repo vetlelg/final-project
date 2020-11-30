@@ -8,73 +8,75 @@
   color:white;
 }
 
+/* First line of the pitch */
 .pitchStyle h1 {
   font-size: 3vw;
   margin: 37vh 0vw 0vw 5vw; /* Top right bottom left */
 }
 
+/* Second line of the pitch */
 .pitchStyle h2 {
   font-size: 1.6vw;
   margin: 0 0 0 5vw; /* Top right bottom left */
 }
 
+/* Height of pitchboxes */
 .pitchImage,
 .pitchStyle {
   height: 90vh;
 }
 
+/* Size of pitchimage */
 .pitchImage {
   width: 50vw;
 }
 
+/* Size of pictures under the Challenge section */
 .challenge-intro img {
   width: 33%;
   padding: 1px;
 }
 
+/* Solution section */
 .solution-intro {
   width: 100%;
   margin-top: 1vw;
   margin-bottom: 2vw;
 }
+
+/* Prototype image */
 .solution-intro img {
   display: block;
   width: 30%;
   margin: auto;
 }
 
-.topMargin {
-  margin-top: 9vw;
-}
-
 /* Tablet version */
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
+  /* First line of the pitch changes */
   .pitchStyle h1 {
     margin: 35vh 0vw 0vw 2vw; /* Top right bottom left */
     font-size: 3.6vw;
   }
 
+  /* Second line of the pitch changes */
   .pitchStyle h2 {
     font-size: 2vw;
     margin: 0 0 0 2vw; /* Top right bottom left */
   }
 
+  /* Change of box heights */
   .pitchImage,
   .pitchStyle {
     height: 85vh;
   }
 
+  /* Change of pitchimage */
   #mainImage {
     content: url("../images/Index-pic4.png");
   }
 
-  /*.pitchImage {
-    width: 70vw;*/ /* Wider imagebox */
-    /*margin-left: -20vw;*/ /* Overlap with pitchbox */
-    /*position: relative;
-    z-index: -1;*/ /* Place imagebox under pitchbox */
-/*  }*/
-
+  /* Change of challenge image sizes */
   .challenge-intro img {
     width: 32.8%;
     padding: 1px;
@@ -82,6 +84,7 @@
 }
 
 /* Tablet portraitmode */
+/* Had to change pitchimage and pitchStyle */
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
   .pitchStyle h1 {
     margin: 10vh 0vw 0vw 5vw; /* Top right bottom left */
@@ -147,9 +150,5 @@
 
   .solution-intro img {
     width: 60%;
-  }
-
-  .topMargin {
-    margin-top: 0vw;
   }
 }
