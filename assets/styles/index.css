@@ -47,6 +47,24 @@
   margin-top: 9vw;
 }
 
+/* Tablet version */
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .pitchStyle h1 {
+    margin: 35vh 0vw 0vw 2vw; /* Top right bottom left */
+    font-size: 3.6vw;
+  }
+
+  .pitchStyle h2 {
+    font-size: 2vw;
+    margin: 0 0 0 2vw; /* Top right bottom left */
+  }
+
+  .challenge-intro img {
+    width: 32.8%;
+    padding: 1px;
+  }
+}
+
 /* Tablet portraitmode */
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
   .pitchStyle h1 {
@@ -70,19 +88,6 @@
 
   .pitchImage {
     width: 100vw;
-  }
-}
-
-/* Tablet version */
-@media only screen and (max-width: 1000px) {
-  .pitchStyle h1 {
-    margin: 35vh 0vw 0vw 2vw; /* Top right bottom left */
-    font-size: 3.6vw;
-  }
-
-  .pitchStyle h2 {
-    font-size: 2vw;
-    margin: 0 0 0 2vw; /* Top right bottom left */
   }
 
   .challenge-intro img {
