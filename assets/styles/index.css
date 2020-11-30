@@ -64,12 +64,16 @@
     height: 85vh;
   }
 
-  .pitchImage {
-    width: 70vw; /* Wider imagebox */
-    margin-left: -20vw; /* Overlap with pitchbox */
-    position: relative;
-    z-index: -1; /* Place imagebox under pitchbox */
+  #mainImage {
+    content: url("../images/Index-pic4.png");
   }
+
+  /*.pitchImage {
+    width: 70vw;*/ /* Wider imagebox */
+    /*margin-left: -20vw;*/ /* Overlap with pitchbox */
+    /*position: relative;
+    z-index: -1;*/ /* Place imagebox under pitchbox */
+/*  }*/
 
   .challenge-intro img {
     width: 32.8%;
