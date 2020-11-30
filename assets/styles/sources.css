@@ -2,13 +2,20 @@
    Here goes css specific to the sources.html page
 */
 
-body {
-  
+/* Placement of anchor have to be under the navigationbar */
+.anchor {
+  margin-top: -102px;
+  padding-top: 100px;
+  position: absolute;
+  z-index: -1; /* Place under navigationbar */
 }
 
-.anchor {
-  margin-top: -60px;
-  padding-top: 60px
+#source1:target, #source2:target, #source3:target,
+#source4:target, #source5:target, #source6:target,
+#source7:target, #source8:target, #source9:target,
+#source10:target, #source11:target, #source12:target,
+#source13:target, #source14:target {
+  color: green;
 }
 
 .span1 {
@@ -17,10 +24,6 @@ body {
 
 .span2 {
   margin-left: 26px;
-}
-
-.space {
-  margin-bottom: -44px;
 }
 
 .extraSpacing {
