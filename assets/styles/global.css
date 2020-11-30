@@ -83,120 +83,101 @@
 }
 
 /* Horizontal navigation bar */
-/*.navigation */
 
 .navigation {
   background-color: white;
   border-bottom: 2px solid #4ca146;
   position: fixed;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   top: 0;
-  z-index: 3;
-}
-
-.navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: white;
 }
 
 .navigation li a {
-  color: black;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #4f5151;
   display: block;
-  padding: 30px 30px;
   text-decoration: none;
 }
 
-.navigation li a:hover,
-.navigation .hamburger-button:hover {
-  background-color: #f4f4f4;
-}
-
 .navigation li {
-  float: left;
+  cursor: pointer;
+  padding: 30px 20px;
+  display: inline-block;
 }
 
-.navigation .logo {
+.navigation li:hover a {
+  color: black;
+}
+
+.logo {
   display: block;
   float: left;
-  padding: 15px 20px;
+  padding: 20px;
   text-decoration: none;
 }
 
 /* menu */
 
-.navigation .menu {
+.menu {
+  display: block;
   clear: none;
   float: right;
   max-height: none;
-  transition: max-height .2s ease-out;
+  transition: max-height 300ms ease-in;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  background-color: white;
 }
 
-/* menu icon */
+/* Hamburger icon */
 
-.navigation .hamburger-icon {
+.hamburger-icon {
+  margin-top: 5px;
   display: none;
 }
 
-.navigation .hamburger-icon .navigation-icon {
+.navigation-icon {
   background: #4ca146;
   display: block;
-  height: 2px;
+  height: 3px;
   position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+  width: 30px;
 }
 
-.navigation .hamburger-icon .navigation-icon:before,
-.navigation .hamburger-icon .navigation-icon:after {
+.navigation-icon:before,
+.navigation-icon:after {
   background: #4ca146;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
   width: 100%;
 }
 
-.navigation .hamburger-icon .navigation-icon:before {
-  top: 5px;
+.navigation-icon:before {
+  top: 7px;
 }
 
-.navigation .hamburger-icon .navigation-icon:after {
-  top: -5px;
+.navigation-icon:after {
+  top: -7px;
 }
 
-/* menu btn */
+/* Hamburger button */
 
-.navigation .hamburger-button {
+.hamburger-button {
   display: none;
 }
 
-.navigation .hamburger-button:checked ~ .menu {
+.hamburger-button:checked ~ .menu {
   max-height: 240px;
 }
-
-.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon {
-  background: transparent;
-}
-
-.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:before {
-  transform: rotate(-45deg);
-}
-
-.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:after {
-  transform: rotate(45deg);
-}
-
-.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:before,
-.navigation .hamburger-button:checked ~ .hamburger-icon .navigation-icon:after {
-  top: 0;
-}
-
-
 
 /* Image container with display flex for positioning images inside a div */
 .image-container {
@@ -259,26 +240,29 @@ footer button {
     grid-column: col-1-start/col-6-end;
   }
 
-
+  /* Navigation bar */
   .navigation li {
+    padding: 10px 20px;
     width: 100vw;
   }
-  .navigation li a {
-    padding: 20px 20px;
-  }
-  .navigation .menu {
+
+  .menu {
     clear: both;
     float: left;
     max-height: 0;
   }
 
-  .navigation .hamburger-icon {
+  .hamburger-icon {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     float: right;
-    padding: 28px 20px;
+    padding: 30px 20px;
     position: relative;
     user-select: none;
+  }
+
+  .navigation li:hover {
+    background-color: #e4e4e4;
   }
 
 }
