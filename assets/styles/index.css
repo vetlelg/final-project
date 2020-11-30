@@ -66,7 +66,7 @@
 
   .pitchImage {
     width: 70vw; /* Wider imagebox */
-    margin-left: -20vw; /* Overlap with pitchbox */
+    /*margin-left: -20vw;*/ /* Overlap with pitchbox */
     position: relative;
     z-index: -1; /* Place imagebox under pitchbox */
   }
@@ -147,12 +147,5 @@
 
   .topMargin {
     margin-top: 0vw;
-  }
-}
-
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-  .pitchImage {
-    width: 50vw;
-    margin-left: 20vw;
   }
 }
