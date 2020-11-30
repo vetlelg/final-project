@@ -86,6 +86,7 @@
 
   .pitchStyle h2 {
     font-size: 3.5vw;
+    margin: 0 0 0 5vw; /* Top right bottom left */
   }
 
   .pitchStyle {
