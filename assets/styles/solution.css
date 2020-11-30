@@ -50,6 +50,15 @@ li {
   height: 30vw;
 }
 
+.air-quality-table {
+  margin: 16px;
+}
+
+.air-quality-table caption {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /* Tablet */
 @media only screen and (max-width: 1000px) {
   table {

@@ -25,7 +25,7 @@
  }
 
  h3 {
-   margin-top: 80px;
+   margin-top: 40px;
    margin-left: 16px;
    margin-right: 16px;
    font-size: 26px;
@@ -94,8 +94,7 @@
 }
 
 .navigation li a {
-  width: fit-content;
-  padding: 0;
+  padding: 30px 20px;
   margin: 0;
   font-weight: bold;
   color: #4f5151;
@@ -104,8 +103,6 @@
 }
 
 .navigation li {
-  cursor: pointer;
-  padding: 30px 20px;
   display: inline-block;
 }
 
@@ -260,8 +257,11 @@ footer button {
 
   /* Navigation bar */
   .navigation li {
-    padding: 10px 20px;
     width: 100vw;
+  }
+
+  .navigation li a {
+    padding: 10px 20px;
   }
 
   .menu {
