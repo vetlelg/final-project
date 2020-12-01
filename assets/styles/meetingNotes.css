@@ -93,7 +93,8 @@ img {
 /* phone version */
 @media only screen and (max-width: 600px) {
   .col-notes {
-    margin: 2vw 3vw 3vw 2vw; /* Top right bottom left */
+    margin: 2vw 2vw 3vw 2vw; /* Top right bottom left */
+    padding: 3vw 7vw 7vw 5vw; /* Top right bottom left */
   }
 
   img {
