@@ -172,6 +172,10 @@
   max-height: 100px;
 }
 
+.label-test {
+  display: none;
+}
+
 .image-container {
   display: block;
 }
