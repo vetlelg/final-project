@@ -88,6 +88,11 @@ img {
   .arrow {
     font-size: 1.9vw;
   }
+
+  .buttonsUnderDocument {
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+  }
 }
 
 /* phone version */
@@ -115,10 +120,5 @@ img {
 
   .arrow {
     font-size: 3.4vw;
-  }
-
-  .buttonsUnderDocument {
-    margin-top: -1vw;
-    margin-bottom: 2vw;
   }
 }
