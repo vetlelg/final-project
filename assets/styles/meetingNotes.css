@@ -10,17 +10,17 @@ p {
   margin-top: 2vw;
 }
 
-ul {
+.col-notes ul {
   margin-top: -0.5vw;
 }
 
-li {
+.col-notes li {
   margin-top: 0.5vw;
   line-height: 145%;
 }
 
 /* Source links */
- li a {
+ .col-notes li a {
    text-decoration: none;
    color: black;
  }
