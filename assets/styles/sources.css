@@ -2,18 +2,34 @@
    Here goes css specific to the sources.html page
 */
 
+/* Placement of anchor have to be under the navigationbar */
+.anchor {
+  margin-top: -102px;
+  padding-top: 100px;
+  position: absolute;
+  z-index: -1; /* Place under navigationbar */
+}
+
+/* To remind user which sourcenumber they clicked */
+#source1:target, #source2:target, #source3:target,
+#source4:target, #source5:target, #source6:target,
+#source7:target, #source8:target, #source9:target,
+#source10:target, #source11:target, #source12:target,
+#source13:target, #source14:target {
+  color: green;
+}
+
+/* Placement of the information sources */
 .span1 {
   margin-left: 53px;
 }
 
+/* Placement of the number of the information source */
 .span2 {
   margin-left: 26px;
 }
 
-.space {
-  margin-bottom: -44px;
-}
-
+/* Extra spacing between sources */
 .extraSpacing {
   margin-top: 30px;
 }

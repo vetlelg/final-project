@@ -2,20 +2,16 @@
  *  CSS specific to the solution.html page
  */
 
-.colorfunctions {
-  background-color: #cccccc;
-}
-
-td {
-  padding: 1vw;
-}
-
 table {
   border: 1px solid grey;
 }
 
 th {
   padding-top: 1vw;
+}
+
+td {
+  padding: 1vw;
 }
 
 ul {
@@ -45,7 +41,6 @@ ul {
 .solution-image img {
   display: block;
   margin: auto;
-  /* height: 50% */
   width: 17vw;
   height: 30vw;
 }
@@ -59,7 +54,7 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Tablet */
+/* Tablet version */
 @media only screen and (max-width: 1000px) {
   table {
     margin-left: 2vw;
@@ -67,7 +62,7 @@ ul {
   }
 }
 
-/* Responsive design */
+/* phone version */
 @media only screen and (max-width: 600px) {
   .solution-image-container {
     flex-direction: column;
@@ -82,8 +77,4 @@ ul {
     width: 70vw;
     height: 130vw;
   }
-}
-
-.textadjustment {
-  margin-top: -0.3vw;
 }
