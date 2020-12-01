@@ -2,19 +2,19 @@
  *  Here goes css specific to the process.html page
  */
 
- li {
+ .process li {
    margin-bottom: 1.5vw;
  }
 
- a {
-   font-weight: bold;
+ .process a {
    text-decoration: none;
+   font-weight: bold;
    color: black;
  }
 
- a:hover {
-   border-bottom: #4ca146 solid 2px;
- }
+.process a:hover {
+  text-decoration: underline;
+}
 
 /* Divide the page into 6 columns. The grid class needs to wrap everything
 in the body */
