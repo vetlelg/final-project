@@ -88,7 +88,10 @@ img {
   .arrow {
     font-size: 1.9vw;
   }
+}
 
+/* Tablet portraitmode */
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
   .buttonsUnderDocument {
     margin-top: -1vw;
     margin-bottom: 2vw;
@@ -120,5 +123,10 @@ img {
 
   .arrow {
     font-size: 3.4vw;
+  }
+
+  .buttonsUnderDocument {
+    margin-top: -1vw;
+    margin-bottom: 2vw;
   }
 }
