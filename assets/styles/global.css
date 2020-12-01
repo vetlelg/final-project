@@ -156,11 +156,11 @@
 }
 
 .navigation-icon:before {
-  top: 7px;
+  top: 8px;
 }
 
 .navigation-icon:after {
-  top: -7px;
+  top: -8px;
 }
 
 /* Hamburger button */
@@ -169,7 +169,7 @@
 }
 
 .hamburger-button:checked ~ .menu {
-  max-height: 240px;
+  max-height: 100px;
 }
 
 .image-container {
